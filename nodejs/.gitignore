@@ -1,0 +1,4 @@
+NEXTAPI_TEST_public.pem
+node_modules
+package-lock.json
+*~

@@ -1,0 +1,21 @@
+{
+  "name": "nordnet-stuff",
+  "version": "1.0.0",
+  "description": "Collection of Nornet sample files",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nordnet"
+  ],
+  "author": "Claes Nygren",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fs": "0.0.1-security",
+    "request": "^2.88.0",
+    "tls": "0.0.1",
+    "util": "^0.12.0"
+  }
+}
