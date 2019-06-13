@@ -120,7 +120,7 @@ function encryptLogin(user, pass, keyfile) {
 
 login(USERNAME, PASSWORD , function ( error, sessionData) {
   if (!error) {
-    subscribePrice(30, '1869', sessionData);
+    subscribePrice(11, '101', sessionData);
   } else
       console.log(error);
 });
