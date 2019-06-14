@@ -9,11 +9,10 @@ const util = require('util'),
       fs = require('fs'),
       request = require('request'),
       crypto = require("crypto"),
-      tls = require('tls');
+      tls = require('tls'),
+      config = require('./config.json');
 
-const USERNAME = 'your_username',
-      PASSWORD = 'your_password',
-      HOST = 'https://api.test.nordnet.se'; // change for production
+const HOST = 'https://api.test.nordnet.se'; // change for production
 
 function login(user, pass, fn) {
     var auth = encryptLogin(user, pass, 'NEXTAPI_TEST_public.pem');
@@ -118,7 +117,7 @@ function encryptLogin(user, pass, keyfile) {
 }
 
 
-login(USERNAME, PASSWORD , function ( error, sessionData) {
+login(config.username, config.password , function ( error, sessionData) {
   if (!error) {
     subscribePrice(11, '101', sessionData);
   } else
